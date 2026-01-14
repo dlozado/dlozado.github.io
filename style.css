@@ -262,7 +262,68 @@ body {
     color: white;
     border: 2px solid white;
 }
+/* ===== DOCUMENTS SECTION STYLES ===== */
+/* Documents section container */
+.documents-section {
+    margin-bottom: 2rem;
+}
 
+/* Grid layout for document cards */
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Individual document card */
+.document-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #001f3f;
+    box-shadow: 0 5px 15px rgba(0, 31, 63, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Document card hover effect */
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 31, 63, 0.2);
+}
+
+/* Heading in document card */
+.document-card h3 {
+    color: #001f3f;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph text in document card */
+.document-card p {
+    color: #555;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Download button styling */
+.download-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #001f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Download button hover effect */
+.download-btn:hover {
+    background: #003d7a;
+    transform: scale(1.05);
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .home-content {
