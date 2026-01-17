@@ -1,103 +1,194 @@
+/* Page style */
 body {
+    /* Font style */
     font-family: 'Segoe UI', system-ui, sans-serif;
+
+    /* Background color */
     background: linear-gradient(180deg, #f7f9fc, #ffffff);
+
+    /* Text color */
     color: #222;
+
+    /* Remove default spacing */
     margin: 0;
 }
 
+/* Main container */
 .container {
+    /* Page width */
     max-width: 1000px;
+
+    /* Center page */
     margin: auto;
+
+    /* Space inside */
     padding: 60px 30px;
 }
 
+/* Top section */
 .hero {
+    /* Center text */
     text-align: center;
+
+    /* Space inside */
     padding: 80px 20px;
 }
 
+/* Profile image */
 .headshot {
+    /* Image size */
     width: 220px;
     height: 220px;
+
+    /* Make circle */
     border-radius: 50%;
+
+    /* Fit image */
     object-fit: cover;
+
+    /* Shadow effect */
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+
+    /* Space below */
     margin-bottom: 30px;
 }
 
+/* Name heading */
 .hero h1 {
+    /* Text size */
     font-size: 3.5rem;
+
+    /* Space below */
     margin-bottom: 10px;
 }
 
+/* Subtitle text */
 .hero-subtitle {
+    /* Text size */
     font-size: 1.3rem;
+
+    /* Text color */
     color: #555;
+
+    /* Space below */
     margin-bottom: 50px;
 }
 
+/* Navigation buttons container */
 .nav-buttons {
+    /* Flex layout */
     display: flex;
+
+    /* Center buttons */
     justify-content: center;
+
+    /* Space between buttons */
     gap: 20px;
+
+    /* Wrap on small screens */
     flex-wrap: wrap;
 }
 
+/* Navigation button */
 .nav-btn {
+    /* Button color */
     background: #000;
     color: white;
+
+    /* Button size */
     padding: 16px 40px;
+
+    /* Rounded corners */
     border-radius: 8px;
+
+    /* Remove underline */
     text-decoration: none;
+
+    /* Text style */
     font-size: 1.1rem;
     font-weight: 600;
+
+    /* Hover animation */
     transition: transform 0.2s ease, background 0.3s ease;
 }
 
+/* Button hover effect */
 .nav-btn:hover {
+    /* Move up */
     transform: translateY(-4px);
+
+    /* Darker color */
     background: #333;
 }
 
+/* Back button */
 .back-btn {
+    /* Display style */
     display: inline-block;
+
+    /* Space below */
     margin-bottom: 40px;
+
+    /* Text style */
     font-weight: 600;
     text-decoration: none;
     color: #000;
 }
 
+/* Main heading */
 h1 {
+    /* Text size */
     font-size: 2.8rem;
+
+    /* Space below */
     margin-bottom: 30px;
 }
 
+/* Section heading */
 h2 {
+    /* Text size */
     font-size: 1.8rem;
+
+    /* Space above */
     margin-top: 50px;
 }
 
+/* Paragraphs and lists */
 p, li {
+    /* Text size */
     font-size: 1.1rem;
+
+    /* Line spacing */
     line-height: 1.8;
 }
 
+/* Contact section */
 .contact-section {
+    /* Space above */
     margin-top: 80px;
+
+    /* Center text */
     text-align: center;
 }
 
+/* Contact links */
 .contact-links {
+    /* Text size */
     font-size: 1.1rem;
+
+    /* Text color */
     color: #444;
 }
 
-/* Mobile */
+/* Mobile styles */
 @media (max-width: 700px) {
+
+    /* Smaller heading */
     .hero h1 {
         font-size: 2.4rem;
     }
 
+    /* Smaller image */
     .headshot {
         width: 160px;
         height: 160px;
